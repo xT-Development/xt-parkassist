@@ -1,6 +1,6 @@
 window.addEventListener('message', (event) => {
     const data = event.data;
-    switch (data.type) {
+    switch (data.action) {
         case 'updateDistance':
             const { dist, maxDist } = event.data;
             const pct = Math.min(Math.max(1 - dist / maxDist, 0), 1);

@@ -7,7 +7,7 @@ function ui.toggleUI(toggle)
     isVisible = toggle
 
     SendNuiMessage(json.encode({
-        type = 'toggleDistanceUI',
+        action = 'toggleDistanceUI',
         visible = toggle
     }))
 end
@@ -20,7 +20,7 @@ function ui.updateDistance(dist, maxDist)
     lastDistance = dist
 
     SendNuiMessage(json.encode({
-        type = 'updateDistance',
+        action = 'updateDistance',
         dist = dist,
         maxDist = maxDist,
     }))
