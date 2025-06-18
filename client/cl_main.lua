@@ -1,5 +1,6 @@
 local UTILS = lib.load('modules.utils')
 local CAM_UTILS = lib.load('modules.cam')
+local toggleKey = lib.load('configs.client').toggleKey
 
 local parkAssist = false
 
@@ -15,7 +16,7 @@ end
 lib.addKeybind({
     name = 'parkassist',
     description = 'Toggle Park Assist',
-    defaultKey = 'N',
+    defaultKey = toggleKey,
     onReleased = function(self)
         toggleParkAssist()
     end
