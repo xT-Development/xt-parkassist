@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+}
+
+#main-container {
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 200px;
+    height: 20px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 4px;
+    overflow: visible;
+}
+
+#main-fill {
+    height: 100%;
+    width: 0%;
+    background-image: linear-gradient(to right, #0f0, #ff0, #f00);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: width 0.2s ease-out, background-size 0.2s ease-out;
+}
+
+#main-text {
+    position: absolute;
+    top: -1.1rem;
+    left: 10%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px black;
+    z-index: 1;
+}
