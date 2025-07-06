@@ -20,7 +20,7 @@ local cam_utils = {}
 
 -- get distance from camera
 function cam_utils.getDistanceFromCam(maxDist)
-    local hit, entityHit, endCoords = lib.raycast.fromCamera(511, 4, maxDist)
+    local hit, _, endCoords = lib.raycast.fromCamera(511, 4, maxDist)
 
     if hit then
         local camPos = GetCamCoord(reverseCam)
