@@ -18,6 +18,8 @@ lib.addKeybind({
     description = 'Toggle Park Assist',
     defaultKey = toggleKey,
     onReleased = function(self)
+        if not cache.vehicle then return end
+
         toggleParkAssist()
     end
 })
